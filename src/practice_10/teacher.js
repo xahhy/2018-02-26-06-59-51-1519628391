@@ -8,7 +8,7 @@ class Teacher extends Person{
     }
 
     introduce(){
-        let className = this.klasses.map(klasses=>klasses.number).join(', ');
+        let className = this.klasses.map(klass=>klass.number).join(', ');
         return `${super.introduce()} I am a Teacher. I teach ${this.klasses.length ? 'Class '+ className : 'No Class'}.`
     }
 
